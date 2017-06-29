@@ -25,15 +25,10 @@ import com.travix.medusa.busyflights.utility.CustomErrorType;
 @RequestMapping("/busyflightApi")
 public class SearchAirlinesFlightsRestController {
 	
-	
+/*
+ *This method is the main method called from browser 	
+ */
 	public static final Logger logger = LoggerFactory.getLogger(SearchAirlinesFlightsRestController.class);
-	
-	/*
-	 * ----------->>>> Retrieve Airline Flights Search
-	 */
-	/*@Autowired	
-	BusyFlightService busyFlight;*/
-
 	
 		@RequestMapping(value = "/search/{origin}/{destination}/{departureDate}/{returnDate}/{numberOfPassengers}", method = RequestMethod.GET)
 		public ResponseEntity<?> getFlights(@PathVariable("origin") String origin,

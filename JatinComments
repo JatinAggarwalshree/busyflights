@@ -11,10 +11,10 @@ Request from browser when passenger are greater than 4(as provided in UseCase)
  Response:
    {"errorMessage":"Flight search with origin DEL destination SYD departureDate 23-05-2017 returnDate 23-06-2017 passengers limit should be less than 4"}
    
-   Their are two projects:
-   1)busyflights : Which is used run your http request above 
+Their are two repository:
+   1)busyflights : Which is used run your http request above. We use BusyFlightsApplication.java in this repo.
    
-   2)gs-rest-service: Which provide Json response for crazy air and tough jet airles
+   2)gs-rest-service: Which provide Json response for crazy air and tough jet airlnes. We use Application.java in this repo.
   
   Steps:
   First we need to start gs-rest-service after completion of this, we need to start busyflights usin spring boot.

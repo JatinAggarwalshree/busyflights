@@ -21,11 +21,6 @@ import com.travix.medusa.busyflights.utility.FlightsInformationClientImpl;
 
 
 public class BusyFlightServiceImpl implements BusyFlightService{
-	
-	@Autowired
-	GetServiceResponse clientService; //Service which will do all data retrieval/manipulation work
-	
-	
 
 	public List<Object> findAllAvailableFlights(BusyFlightsRequest busyFlightsRequest) {
 		
@@ -137,32 +132,4 @@ public class BusyFlightServiceImpl implements BusyFlightService{
 				return responseList;
 			}
 		
-		
-		
-	
-
-	@SuppressWarnings("unchecked")
-	private static List<BusyFlightsResponse> populateDummyFlights(){
-		List<BusyFlightsResponse> flightsData = new ArrayList<>();
-		
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new CrazyAirResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new CrazyAirResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new CrazyAirResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new CrazyAirResponse());
-		
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new ToughJetResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new ToughJetResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new ToughJetResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new ToughJetResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new ToughJetResponse());
-		flightsData.addAll((Collection<? extends BusyFlightsResponse>) new ToughJetResponse());
-		
-		
-		
-		
-		
-		
-		return flightsData;
-	}
-
 }

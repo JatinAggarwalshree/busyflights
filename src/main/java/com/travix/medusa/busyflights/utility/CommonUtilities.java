@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.travix.medusa.busyflights.domain.crazyair.CrazyAirResponse;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetResponse;
 /*
- * This class is being used to provide common functionality in current requirement
+ * common functionality to get List from Json 
  * as well as for any future amendments
  * */
 public class CommonUtilities {
