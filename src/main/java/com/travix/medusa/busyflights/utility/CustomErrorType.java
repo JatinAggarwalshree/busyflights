@@ -1,6 +1,8 @@
 package com.travix.medusa.busyflights.utility;
 
-
+/*
+ * Custom Error Type
+ */
 public class CustomErrorType {
 
     private String errorMessage;
