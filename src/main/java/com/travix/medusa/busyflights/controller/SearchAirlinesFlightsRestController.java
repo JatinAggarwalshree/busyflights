@@ -46,7 +46,7 @@ public class SearchAirlinesFlightsRestController {
 			busyFlightsrequest.setReturnDate(returnDate);
 			busyFlightsrequest.setNumberOfPassengers(numberOfPassengers);
 			
-			if (numberOfPassengers > 4 || numberOfPassengers < 0 ) {
+			if (numberOfPassengers > 4 || numberOfPassengers < 1 ) {
 				logger.error("Flight search with origin {} , destination {} , departureDate {}, returnDate {}, numberOfPassengers {}  not found. ::", 
 															      origin, destination, departureDate, returnDate, numberOfPassengers);
 				return new ResponseEntity(new CustomErrorType("Flight search with origin " + origin

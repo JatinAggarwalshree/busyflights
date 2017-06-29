@@ -8,6 +8,10 @@ import java.util.List;
 import com.travix.medusa.busyflights.domain.crazyair.CrazyAirResponse;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetResponse;
 
+/*
+ * to sort price between crazy and tough jet
+ */
+
 @SuppressWarnings("unused")
 class SortFlightList implements Comparator<Object> {
 public int compare(Object e1, Object e2) {

@@ -10,6 +10,10 @@ import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsRequest;
 import com.travix.medusa.busyflights.domain.crazyair.CrazyAirRequest;
 import com.travix.medusa.busyflights.domain.toughjet.ToughJetRequest;
 
+/*
+ * Web Service to invoke crazy and tough jet airline
+ */
+
 public class FlightsInformationClientImpl implements FlightsInformationClient{
 
 	private DefaultHttpClient httpclient;
