@@ -1,0 +1,20 @@
+Request from browser when passenger are less than 4:
+http://localhost:8888/busyflightApi/search/DEL/SYD/23-05-2017/23-06-2017/4
+
+Response
+    
+  [{"airline":"kingfisher","supplier":"ToughJet","fare":62747.16,"departureAirportCode":"LHR","destinationAirportCode":"AMS","departureDate":"2017-12-03","arrivalDate":"2017-12-15"},{"airline":"kingfisher","supplier":"ToughJet","fare":64016.32,"departureAirportCode":"LHR","destinationAirportCode":"AMS","departureDate":"2017-12-03","arrivalDate":"2017-12-15"},{"airline":"Emirates","supplier":"CrazyAir","fare":65330.0,"departureAirportCode":"LHR","destinationAirportCode":"AMS","departureDate":"2017-12-03","arrivalDate":"2017-12-15"},{"airline":"Emirates","supplier":"CrazyAir","fare":65334.0,"departureAirportCode":"LHR","destinationAirportCode":"AMS","departureDate":"2017-12-03","arrivalDate":"2017-12-15"},{"airline":"kingfisher","supplier":"ToughJet","fare":84319.35,"departureAirportCode":"LHR","destinationAirportCode":"AMS","departureDate":"2017-12-03","arrivalDate":"2017-12-15"},{"airline":"Emirates","supplier":"CrazyAir","fare":87655.0,"departureAirportCode":"LHR","destinationAirportCode":"AMS","departureDate":"2017-12-03","arrivalDate":"2017-12-15"}]
+
+Request from browser when passenger are greater than 4(as provided in UseCase) 
+: http://localhost:8888/busyflightApi/search/DEL/SYD/23-05-2017/23-06-2017/5
+ 
+ Response:
+   {"errorMessage":"Flight search with origin DEL destination SYD departureDate 23-05-2017 returnDate 23-06-2017 passengers limit should be less than 4"}
+   
+   Their are two projects:
+   1)busyflights : Which is used run your http request above 
+   
+   2)gs-rest-service: Which provide Json response for crazy air and tough jet airles
+  
+  Steps:
+  First we need to start gs-rest-service after completion of this, we need to start busyflights usin spring boot.
