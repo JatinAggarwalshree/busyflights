@@ -16,7 +16,7 @@ public class CommonUtilities {
 	public CommonUtilities() {
 	}
 	
-	public List<CrazyAirResponse> ObjectCrazyAir(String responseJSON) {
+	public List<CrazyAirResponse> objectCrazyAir(String responseJSON) {
 		List<CrazyAirResponse> list = null;
 		
 		ObjectMapper mapper = new ObjectMapper();
@@ -28,7 +28,7 @@ public class CommonUtilities {
 		return list;
 	}
 	
-	public List<ToughJetResponse> ObjectToughJet(String responseJSON) {
+	public List<ToughJetResponse> objectToughJet(String responseJSON) {
 		List<ToughJetResponse> list = null;
 		
 		ObjectMapper mapper = new ObjectMapper();

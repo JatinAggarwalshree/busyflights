@@ -46,11 +46,11 @@ public class BusyFlightServiceImpl implements BusyFlightService{
 		
 
 		//JSON response being converted into List
-		List<CrazyAirResponse> crazyAirList = (List<CrazyAirResponse>) commonUtilities.ObjectCrazyAir(crazyJson);
+		List<CrazyAirResponse> crazyAirList = (List<CrazyAirResponse>) commonUtilities.objectCrazyAir(crazyJson);
 		
 			    
 		//JSON response being converted into List
-		List<ToughJetResponse> toughJetList = (List<ToughJetResponse>) commonUtilities.ObjectToughJet(toughJetJson);
+		List<ToughJetResponse> toughJetList = (List<ToughJetResponse>) commonUtilities.objectToughJet(toughJetJson);
 		
 				
 				List<Object> allFlightsList = new ArrayList<Object>();
@@ -78,8 +78,7 @@ public class BusyFlightServiceImpl implements BusyFlightService{
 					
 					allFlightsList.add(object);
 				}
-				
-				//to be implemented
+								
 				System.out.println("Before Sorting >>>>>>");
 				for(Object obj:allFlightsList)
 					System.out.println(obj);
